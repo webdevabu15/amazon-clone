@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <a href="./index.html" class="logo">Amazon</a>
+            <div class="nav-wrapper">
+                <form id="searchForm" class="search">
+                    <input id="search" class="search" type="text" placeholder="search...">
+                    <button value="save">search</button>
+                </form>
+                <a href="./cart.html" class="cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <p id="view-cart-btn">cart</p>
+                </a>
+                <a href="./profile/index.html" class="account">
+                    <i class="fa-regular fa-face-smile-wink"></i>
+                    <p>account</p>
+                </a>
+            </div>
+        </nav>
+        <main>
+            <div id="categoryButtons" style="margin-bottom: 20px;">
+                <button data-category="all" class="category-btn active">All</button>
+                <button data-category="Clothes" class="category-btn">Clothes</button>
+                <button data-category="Electronics" class="category-btn">Electronics</button>
+                <button data-category="Furniture" class="category-btn">Furniture</button>
+                <button data-category="Shoes" class="category-btn">Shoes</button>
+                <button data-category="Miscellaneous" class="category-btn">Miscellaneous</button>
+                <button data-category="testing-category" class="category-btn">Testing Category</button>
+            </div>
+            <div class="all-products" id="all-products">
+
+            </div>
+            <div id="product-modal" class="modal hidden">
+                <div class="modal-content">
+                  <span id="close-modal">&times;</span>
+                  <div id="modal-body"></div>
+                </div>
+              </div>
+              
+        </main>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>

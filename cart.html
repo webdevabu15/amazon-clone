@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+  integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./cart/cart.css"/>
+  <title>Cart-Amazon</title>
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <a href="./index.html" class="logo">Amazon</a>
+      <div class="nav-wrapper">
+          <form id="searchForm" class="search">
+              <input id="search" class="search" type="text" placeholder="search...">
+              <button value="save">search</button>
+          </form>
+          <a href="./index.html" class="home">
+              <i class="fa-solid fa-home"></i>
+              <p id="view-cart-btn">home</p>
+          </a>
+          <a href="./profile/index.html" class="account">
+            <i class="fa-regular fa-face-smile-wink"></i>
+            <p>account</p>
+        </a>
+      </div>
+  </nav>
+     
+    <div class="cart-container">
+      <h2>Products in the cart</h2>
+      <div id="cart-items"></div>
+      <div class="cart-summary">
+        <p>all price: <span id="total-price">0</span> $</p>
+        <button id="clear-cart-btn">clear all products</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="./cart/cart.js"></script>
+</body>
+</html>
